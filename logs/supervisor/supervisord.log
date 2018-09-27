@@ -1,0 +1,204 @@
+2018-09-27 02:05:20,306 CRIT Supervisor running as root (no user in config file)
+2018-09-27 02:05:20,308 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2018-09-27 02:05:20,403 INFO RPC interface 'supervisor' initialized
+2018-09-27 02:05:20,405 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-09-27 02:05:20,407 INFO supervisord started with pid 1
+2018-09-27 02:05:21,414 INFO spawned: 'varnishd' with pid 16
+2018-09-27 02:05:21,427 INFO spawned: 'php-fpm' with pid 17
+2018-09-27 02:05:21,459 INFO spawned: 'varnish-plugins-watcher' with pid 18
+2018-09-27 02:05:21,862 INFO spawned: 'nginx' with pid 19
+2018-09-27 02:05:21,915 INFO spawned: 'MailHog' with pid 20
+2018-09-27 02:05:21,981 INFO spawned: 'mysql' with pid 21
+2018-09-27 02:05:22,092 INFO spawned: 'varnish-themes-watcher' with pid 23
+2018-09-27 02:05:23,397 INFO success: varnishd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:05:23,468 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:05:23,548 INFO success: varnish-plugins-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:05:23,549 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:05:23,550 INFO success: MailHog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:05:23,551 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:05:23,554 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:55:51,048 INFO exited: varnishd (exit status 0; expected)
+2018-09-27 02:55:52,136 INFO spawned: 'varnishd' with pid 2819
+2018-09-27 02:55:53,160 INFO success: varnishd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:55:55,371 INFO exited: varnishd (terminated by SIGTERM; not expected)
+2018-09-27 02:55:55,386 INFO spawned: 'varnishd' with pid 2842
+2018-09-27 02:55:55,392 INFO reaped unknown pid 2822
+2018-09-27 02:55:56,406 INFO success: varnishd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:55:59,269 INFO exited: varnish-plugins-watcher (terminated by SIGTERM; not expected)
+2018-09-27 02:55:59,271 INFO reaped unknown pid 2824
+2018-09-27 02:55:59,935 INFO spawned: 'varnish-plugins-watcher' with pid 2849
+2018-09-27 02:55:59,947 INFO exited: varnish-themes-watcher (terminated by SIGTERM; not expected)
+2018-09-27 02:56:00,092 INFO spawned: 'varnish-themes-watcher' with pid 2851
+2018-09-27 02:56:01,196 INFO success: varnish-plugins-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 02:56:01,197 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-09-27 03:00:03,205 INFO reaped unknown pid 3275
+2018-09-27 03:00:03,222 INFO reaped unknown pid 3279
+2018-09-27 03:00:03,236 INFO reaped unknown pid 3282
+2018-09-27 03:00:03,248 INFO reaped unknown pid 3285
+2018-09-27 03:00:03,258 INFO reaped unknown pid 3288
+2018-09-27 03:00:03,272 INFO reaped unknown pid 3291
+2018-09-27 03:00:03,283 INFO reaped unknown pid 3294
+2018-09-27 03:00:03,295 INFO reaped unknown pid 3297
+2018-09-27 03:00:03,306 INFO reaped unknown pid 3300
+2018-09-27 03:00:03,319 INFO reaped unknown pid 3303
+2018-09-27 03:00:03,330 INFO reaped unknown pid 3306
+2018-09-27 03:00:03,340 INFO reaped unknown pid 3309
+2018-09-27 03:00:03,359 INFO reaped unknown pid 3312
+2018-09-27 03:00:03,387 INFO reaped unknown pid 3314
+2018-09-27 03:00:03,388 INFO reaped unknown pid 3317
+2018-09-27 03:00:03,409 INFO reaped unknown pid 3321
+2018-09-27 03:00:03,421 INFO reaped unknown pid 3324
+2018-09-27 03:00:03,432 INFO reaped unknown pid 3327
+2018-09-27 03:00:03,442 INFO reaped unknown pid 3330
+2018-09-27 03:00:03,456 INFO reaped unknown pid 3333
+2018-09-27 03:00:03,471 INFO reaped unknown pid 3336
+2018-09-27 03:00:03,481 INFO reaped unknown pid 3339
+2018-09-27 03:00:03,493 INFO reaped unknown pid 3342
+2018-09-27 03:00:03,502 INFO reaped unknown pid 3345
+2018-09-27 03:00:03,514 INFO reaped unknown pid 3348
+2018-09-27 03:00:03,517 INFO reaped unknown pid 3350
+2018-09-27 03:00:03,572 INFO reaped unknown pid 3354
+2018-09-27 03:00:03,585 INFO reaped unknown pid 3357
+2018-09-27 03:00:03,598 INFO reaped unknown pid 3360
+2018-09-27 03:00:03,611 INFO reaped unknown pid 3363
+2018-09-27 03:00:03,617 INFO reaped unknown pid 3365
+2018-09-27 03:00:03,636 INFO reaped unknown pid 3369
+2018-09-27 03:00:03,645 INFO reaped unknown pid 3372
+2018-09-27 03:00:03,659 INFO reaped unknown pid 3375
+2018-09-27 03:00:03,671 INFO reaped unknown pid 3378
+2018-09-27 03:00:03,681 INFO reaped unknown pid 3381
+2018-09-27 03:00:03,692 INFO reaped unknown pid 3384
+2018-09-27 03:00:03,702 INFO reaped unknown pid 3387
+2018-09-27 03:00:03,712 INFO reaped unknown pid 3390
+2018-09-27 03:00:03,722 INFO reaped unknown pid 3393
+2018-09-27 03:00:03,734 INFO reaped unknown pid 3396
+2018-09-27 03:00:03,749 INFO reaped unknown pid 3399
+2018-09-27 03:00:03,758 INFO reaped unknown pid 3402
+2018-09-27 03:00:03,769 INFO reaped unknown pid 3405
+2018-09-27 03:00:03,780 INFO reaped unknown pid 3408
+2018-09-27 03:00:03,790 INFO reaped unknown pid 3411
+2018-09-27 03:01:56,349 INFO reaped unknown pid 3506
+2018-09-27 03:01:56,361 INFO reaped unknown pid 3508
+2018-09-27 03:01:56,438 INFO reaped unknown pid 3512
+2018-09-27 03:01:56,454 INFO reaped unknown pid 3515
+2018-09-27 03:01:56,535 INFO reaped unknown pid 3518
+2018-09-27 03:01:56,546 INFO reaped unknown pid 3521
+2018-09-27 03:01:56,591 INFO reaped unknown pid 3523
+2018-09-27 03:01:56,664 INFO reaped unknown pid 3527
+2018-09-27 03:01:56,707 INFO reaped unknown pid 3530
+2018-09-27 03:01:56,754 INFO reaped unknown pid 3533
+2018-09-27 03:01:56,781 INFO reaped unknown pid 3536
+2018-09-27 03:01:56,801 INFO reaped unknown pid 3539
+2018-09-27 03:01:56,863 INFO reaped unknown pid 3542
+2018-09-27 03:01:56,864 INFO reaped unknown pid 3545
+2018-09-27 03:01:56,884 INFO reaped unknown pid 3548
+2018-09-27 03:01:56,942 INFO reaped unknown pid 3551
+2018-09-27 03:01:56,943 INFO reaped unknown pid 3554
+2018-09-27 03:01:56,957 INFO reaped unknown pid 3557
+2018-09-27 03:01:56,994 INFO reaped unknown pid 3560
+2018-09-27 03:01:57,026 INFO reaped unknown pid 3563
+2018-09-27 03:01:57,076 INFO reaped unknown pid 3566
+2018-09-27 03:01:57,146 INFO reaped unknown pid 3572
+2018-09-27 03:01:57,148 INFO reaped unknown pid 3569
+2018-09-27 03:01:57,215 INFO reaped unknown pid 3575
+2018-09-27 03:01:57,295 INFO reaped unknown pid 3578
+2018-09-27 03:01:57,296 INFO reaped unknown pid 3581
+2018-09-27 03:01:57,298 INFO reaped unknown pid 3584
+2018-09-27 03:01:57,303 INFO reaped unknown pid 3587
+2018-09-27 03:01:57,320 INFO reaped unknown pid 3590
+2018-09-27 03:01:57,350 INFO reaped unknown pid 3593
+2018-09-27 03:01:57,376 INFO reaped unknown pid 3596
+2018-09-27 03:01:57,393 INFO reaped unknown pid 3599
+2018-09-27 03:01:57,411 INFO reaped unknown pid 3602
+2018-09-27 03:01:57,428 INFO reaped unknown pid 3605
+2018-09-27 03:01:57,449 INFO reaped unknown pid 3608
+2018-09-27 03:01:57,460 INFO reaped unknown pid 3611
+2018-09-27 03:01:57,486 INFO reaped unknown pid 3614
+2018-09-27 03:01:57,506 INFO reaped unknown pid 3617
+2018-09-27 03:01:57,533 INFO reaped unknown pid 3620
+2018-09-27 03:01:57,555 INFO reaped unknown pid 3623
+2018-09-27 03:01:57,598 INFO reaped unknown pid 3626
+2018-09-27 03:01:57,655 INFO reaped unknown pid 3629
+2018-09-27 03:01:57,672 INFO reaped unknown pid 3632
+2018-09-27 03:01:57,702 INFO reaped unknown pid 3635
+2018-09-27 03:01:57,721 INFO reaped unknown pid 3638
+2018-09-27 03:01:57,746 INFO reaped unknown pid 3641
+2018-09-27 03:01:57,757 INFO reaped unknown pid 3644
+2018-09-27 03:01:57,785 INFO reaped unknown pid 3647
+2018-09-27 03:01:57,811 INFO reaped unknown pid 3650
+2018-09-27 03:01:57,829 INFO reaped unknown pid 3653
+2018-09-27 03:01:57,838 INFO reaped unknown pid 3656
+2018-09-27 03:01:57,858 INFO reaped unknown pid 3659
+2018-09-27 03:01:57,874 INFO reaped unknown pid 3662
+2018-09-27 03:01:57,901 INFO reaped unknown pid 3665
+2018-09-27 03:01:57,947 INFO reaped unknown pid 3671
+2018-09-27 03:01:57,990 INFO reaped unknown pid 3675
+2018-09-27 03:01:58,012 INFO reaped unknown pid 3677
+2018-09-27 03:01:58,109 INFO reaped unknown pid 3681
+2018-09-27 03:01:58,155 INFO reaped unknown pid 3684
+2018-09-27 03:01:58,201 INFO reaped unknown pid 3687
+2018-09-27 03:01:58,241 INFO reaped unknown pid 3690
+2018-09-27 03:01:58,301 INFO reaped unknown pid 3693
+2018-09-27 03:01:58,355 INFO reaped unknown pid 3696
+2018-09-27 03:01:58,404 INFO reaped unknown pid 3699
+2018-09-27 03:01:58,439 INFO reaped unknown pid 3702
+2018-09-27 03:01:58,465 INFO reaped unknown pid 3705
+2018-09-27 03:02:16,611 INFO reaped unknown pid 3724
+2018-09-27 03:02:16,633 INFO reaped unknown pid 3727
+2018-09-27 03:02:16,653 INFO reaped unknown pid 3730
+2018-09-27 03:02:16,674 INFO reaped unknown pid 3733
+2018-09-27 03:02:16,692 INFO reaped unknown pid 3736
+2018-09-27 03:02:16,705 INFO reaped unknown pid 3739
+2018-09-27 03:02:16,717 INFO reaped unknown pid 3742
+2018-09-27 03:02:16,736 INFO reaped unknown pid 3745
+2018-09-27 03:02:16,749 INFO reaped unknown pid 3748
+2018-09-27 03:02:16,763 INFO reaped unknown pid 3751
+2018-09-27 03:02:16,776 INFO reaped unknown pid 3754
+2018-09-27 03:02:16,787 INFO reaped unknown pid 3757
+2018-09-27 03:02:16,801 INFO reaped unknown pid 3760
+2018-09-27 03:02:16,819 INFO reaped unknown pid 3763
+2018-09-27 03:02:16,831 INFO reaped unknown pid 3766
+2018-09-27 03:02:16,857 INFO reaped unknown pid 3769
+2018-09-27 03:02:16,896 INFO reaped unknown pid 3772
+2018-09-27 03:02:16,922 INFO reaped unknown pid 3775
+2018-09-27 03:02:16,945 INFO reaped unknown pid 3778
+2018-09-27 03:02:16,957 INFO reaped unknown pid 3781
+2018-09-27 03:02:16,990 INFO reaped unknown pid 3784
+2018-09-27 03:02:17,006 INFO reaped unknown pid 3787
+2018-09-27 03:02:17,015 INFO reaped unknown pid 3790
+2018-09-27 03:02:17,042 INFO reaped unknown pid 3793
+2018-09-27 03:02:17,118 INFO reaped unknown pid 3796
+2018-09-27 03:02:17,205 INFO reaped unknown pid 3799
+2018-09-27 03:02:17,281 INFO reaped unknown pid 3802
+2018-09-27 03:02:17,358 INFO reaped unknown pid 3805
+2018-09-27 03:02:17,412 INFO reaped unknown pid 3808
+2018-09-27 03:02:17,443 INFO reaped unknown pid 3811
+2018-09-27 03:02:17,509 INFO reaped unknown pid 3813
+2018-09-27 03:02:17,556 INFO reaped unknown pid 3817
+2018-09-27 03:02:17,592 INFO reaped unknown pid 3820
+2018-09-27 03:02:17,620 INFO reaped unknown pid 3823
+2018-09-27 03:02:17,654 INFO reaped unknown pid 3825
+2018-09-27 03:02:17,712 INFO reaped unknown pid 3829
+2018-09-27 03:02:17,754 INFO reaped unknown pid 3832
+2018-09-27 03:02:17,782 INFO reaped unknown pid 3834
+2018-09-27 03:02:17,863 INFO reaped unknown pid 3838
+2018-09-27 03:02:17,863 INFO reaped unknown pid 3841
+2018-09-27 03:02:17,914 INFO reaped unknown pid 3844
+2018-09-27 03:02:18,039 INFO reaped unknown pid 3849
+2018-09-27 03:02:18,184 INFO reaped unknown pid 3854
+2018-09-27 03:02:18,210 INFO reaped unknown pid 3857
+2018-09-27 03:02:18,238 INFO reaped unknown pid 3860
+2018-09-27 03:02:18,275 INFO reaped unknown pid 3863
+2018-09-27 03:02:18,326 INFO reaped unknown pid 3866
+2018-09-27 03:02:18,328 INFO reaped unknown pid 3869
+2018-09-27 03:02:18,473 INFO reaped unknown pid 3872
+2018-09-27 03:02:18,495 INFO reaped unknown pid 3875
+2018-09-27 03:02:36,720 INFO reaped unknown pid 3894
+2018-09-27 03:02:36,724 INFO reaped unknown pid 3897
+2018-09-27 03:02:36,752 INFO reaped unknown pid 3901
+2018-09-27 03:24:35,967 INFO reaped unknown pid 4965
+2018-09-27 03:24:36,068 INFO reaped unknown pid 4968
+2018-09-27 03:24:36,228 INFO reaped unknown pid 4971
+2018-09-27 03:52:40,484 INFO reaped unknown pid 6327
+2018-09-27 03:52:40,510 INFO reaped unknown pid 6330
+2018-09-27 03:52:40,530 INFO reaped unknown pid 6333

@@ -1,0 +1,13 @@
+Debug: Platform: Linux,4.9.93-boot2docker,x86_64,-jnone,-smalloc,-smalloc,-hcritbit
+
+Debug: Child (72) Started
+Info: Child (72) said Child starts
+Error: Manager got SIGINT
+Debug: Stopping Child
+Info: Child (72) ended
+Info: Child (72) said Child dies
+Debug: Child cleanup complete
+Debug: Platform: Linux,4.9.93-boot2docker,x86_64,-jnone,-smalloc,-smalloc,-hcritbit
+
+Debug: Child (2862) Started
+Info: Child (2862) said Child starts
