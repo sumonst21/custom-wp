@@ -202,3 +202,16 @@
 2018-09-27 03:52:40,484 INFO reaped unknown pid 6327
 2018-09-27 03:52:40,510 INFO reaped unknown pid 6330
 2018-09-27 03:52:40,530 INFO reaped unknown pid 6333
+2018-09-28 03:58:22,285 WARN received SIGTERM indicating exit request
+2018-09-28 03:58:22,288 INFO waiting for varnishd, php-fpm, varnish-plugins-watcher, nginx, MailHog, mysql, varnish-themes-watcher to die
+2018-09-28 03:58:23,290 INFO stopped: varnish-themes-watcher (terminated by SIGTERM)
+2018-09-28 03:58:24,596 INFO stopped: mysql (exit status 0)
+2018-09-28 03:58:24,600 INFO stopped: MailHog (terminated by SIGTERM)
+2018-09-28 03:58:25,605 INFO stopped: nginx (exit status 0)
+2018-09-28 03:58:25,608 INFO waiting for varnishd, php-fpm, varnish-plugins-watcher to die
+2018-09-28 03:58:26,147 INFO stopped: varnish-plugins-watcher (terminated by SIGTERM)
+2018-09-28 03:58:26,148 INFO reaped unknown pid 15559
+2018-09-28 03:58:26,537 INFO reaped unknown pid 15561
+2018-09-28 03:58:27,030 INFO stopped: php-fpm (exit status 0)
+2018-09-28 03:58:28,363 INFO reaped unknown pid 30
+2018-09-28 03:58:28,532 INFO stopped: varnishd (exit status 0)
