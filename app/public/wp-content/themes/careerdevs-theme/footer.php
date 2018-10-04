@@ -14,10 +14,15 @@
                     <h3 class="headline headline--small">Explore</h3>
                     <nav class="nav-list">
                     <ul>
-                        <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
+                        <?php 
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_menu_location_1'
+                            ))
+                        ?>
+                        <!-- <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 11) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
                         <li><a href="#">Programs</a></li>
                         <li><a href="#">Events</a></li>
-                        <li><a href="#">Campuses</a></li>
+                        <li><a href="#">Campuses</a></li> -->
                     </ul>
                     </nav>
                 </div>
@@ -26,9 +31,14 @@
                     <h3 class="headline headline--small">Learn</h3>
                     <nav class="nav-list">
                     <ul>
-                        <li><a href="#">Legal</a></li>
+                        <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_menu_location_2'
+                            ))
+                        ?>
+                        <!-- <li><a href="#">Legal</a></li>
                         <li><a href="<?php echo site_url('/privacy-policy'); ?>">Privacy</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Careers</a></li> -->
                     </ul>
                     </nav>
                 </div>

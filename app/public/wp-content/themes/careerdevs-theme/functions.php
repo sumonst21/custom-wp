@@ -10,6 +10,10 @@
     add_action('wp_enqueue_scripts', 'careerdevs_files');
 
     function careerdevs_features() {
+        register_nav_menu('header_menu_location', 'Header Menu Location');
+        register_nav_menu('footer_menu_location_1', 'Footer Menu Location 1');
+        register_nav_menu('footer_menu_location_2', 'Footer Menu Location 2');
+
         add_theme_support('title-tag');
     }
 
