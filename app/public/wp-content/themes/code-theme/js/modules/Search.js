@@ -56,7 +56,7 @@ class Search {
             this.resultsDiv.html(`
                 <h2 class="search-overlay__section-title">Results for '${this.searchField.val()}'</h2>
                 ${combinedResults.length ? '<ul class="link-list min-list">' : '<p>No results found</p>'}
-                    ${combinedResults.map(post => `<li><a href="${combinedResults.link}">${post.title.rendered}</a></li>`).join('')}
+                    ${combinedResults.map(post => `<li><a href="${combinedResults.link}">${post.title.rendered}</a> ${post.type == 'post' ? `by ${post.author_name}` : '' }</li>`).join('')}
                 ${combinedResults.length ? '</ul>' : ''}
             `);
         this.isSpinnerVisible = false;
