@@ -65,6 +65,10 @@ function university_post_types() {
             'supports' => array(
                 'title', 'editor', 'thumbnail'
             ),
+            'rewrite' => array(
+                'slug' => 'professors'
+            ),
+            'has_archive' => true,
             'public' => true,
             'labels' => array(
                 'name' => 'Professors',

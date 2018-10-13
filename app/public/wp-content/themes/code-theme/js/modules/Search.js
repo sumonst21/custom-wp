@@ -46,23 +46,59 @@ class Search {
     }
 
     getResults() {
-        var query = this.searchField.val();            
+        var query = this.searchField.val();
+            $.getJSON(`${code_university_data.root_url}/wp-json/university/v1/search?term=${query}`, (results) => {
+                this.resultsDiv.html(`
+                    <div class='row'>
+                        <div class='one-third'>
+                            <h2 class="search-overlay__section-title">General Information</h2>
+                            ${results.general_info.length ? '<ul class="link-list min-list">' : '<p>No results found</p>'}
+                                ${results.general_info.map(post => `<li><a href="${post.permalink}">${post.title}</a> ${post.post_type == 'post' ? `by ${post.author_name}` : '' }</li>`).join('')}
+                            ${results.general_info.length ? '</ul>' : ''}
+                        </div>
+                        <div class='one-third'>
+                            <h2 class="search-overlay__section-title">Programs</h2>
+                            ${results.programs.length ? '<ul class="link-list min-list">' : `<p>No programs found</p><a href="${code_university_data.root_url}/programs">View All Programs</a>`}
+                                ${results.programs.map(post => `<li><a href="${post.permalink}">${post.title}</a></li>`).join('')}
+                            ${results.programs.length ? '</ul>' : ''}
+                            <h2 class="search-overlay__section-title">Professors</h2>
+                            ${results.professors.length ? '<ul class="professor-cards">' : `<p>No professors found</p><a href="${code_university_data.root_url}/professors">View All Professors</a>`}
+                                ${results.professors.map(post => `
+                                <li class="professor-card__list-item">
+                                <a class="professor-card" href="${post.permalink}">
+                                    <img class="professor-card__image" src="${post.image}" alt="">
+                                    <span class="professor-card__name">${post.title}</span>
+                                </a>
+                            </li>
+                                `).join('')}
+                            ${results.professors.length ? '</ul>' : ''}
+                        </div>
+                        <div class='one-third'>
+                            <h2 class="search-overlay__section-title">Campuses</h2>
+                            ${results.campuses.length ? '<ul class="link-list min-list">' : `<p>No campuses found</p><a href="${code_university_data.root_url}/campuses">View All Campuses</a>`}
+                                ${results.campuses.map(post => `<li><a href="${post.permalink}">${post.title}</a></li>`).join('')}
+                            ${results.campuses.length ? '</ul>' : ''}
 
-        $.when(
-            $.getJSON(`${code_university_data.root_url}/wp-json/wp/v2/posts?search=${query}`),
-            $.getJSON(`${code_university_data.root_url}/wp-json/wp/v2/pages?search=${query}`)
-            ).then((posts, pages) => {
-            var combinedResults = posts[0].concat(pages[0]);
-            this.resultsDiv.html(`
-                <h2 class="search-overlay__section-title">Results for '${this.searchField.val()}'</h2>
-                ${combinedResults.length ? '<ul class="link-list min-list">' : '<p>No results found</p>'}
-                    ${combinedResults.map(post => `<li><a href="${combinedResults.link}">${post.title.rendered}</a> ${post.type == 'post' ? `by ${post.author_name}` : '' }</li>`).join('')}
-                ${combinedResults.length ? '</ul>' : ''}
-            `);
-        this.isSpinnerVisible = false;
-        }, () => {
-            this.resultsDiv.html('<p>Unexpected error. Please try again.</p>')
-        });
+                            <h2 class="search-overlay__section-title">Events</h2>
+                            ${results.events.length ? '' : `<p>No events found</p><a href="${code_university_data.root_url}/events">View All Events</a>`}
+                                ${results.events.map(post => `
+                                    <div class="event-summary">
+                                    <a class="event-summary__date t-center" href="${post.permalink}">
+                                                <span class="event-summary__month">${post.month}</span>
+                                        <span class="event-summary__day">${post.day}</span>
+                                    </a>
+                                    <div class="event-summary__content">
+                                        <h5 class="event-summary__title headline headline--tiny"><a href="${post.permalink}">${post.title}</a></h5>
+                                        <p>${post.description}<a href="${post.permalink}" class="nu gray">Learn more</a></p>
+                                    </div>
+                                </div>
+                                `).join('')}
+                            ${results.events.length ? '</ul>' : ''}
+                        </div>
+                    </div>
+                `);
+            });
+            this.isSpinnerVisible = false;
     };
 
     keyPressDispatcher(e) {
